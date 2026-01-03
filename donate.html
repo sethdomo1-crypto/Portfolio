@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate | Seth Brown's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Seth Brown</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="donate.html" class="active">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content-wrapper">
+    <main>
+      <h2>Make a Donation</h2>
+      <p>Thank you for your interest in supporting my work! Please fill out the form below to make a donation.</p>
+
+      <form id="donationForm" action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Title / Gender</legend>
+          <label><input type="radio" name="title" value="Mr" required> Mr.</label>
+          <label><input type="radio" name="title" value="Ms"> Ms.</label>
+          <label><input type="radio" name="title" value="Mx"> Mx.</label>
+          <label><input type="radio" name="title" value="Other"> Other</label>
+        </fieldset>
+
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <!-- Email -->
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Date -->
+        <label for="donation-date">Date:</label>
+        <input type="date" id="donation-date" name="donation-date" required>
+
+        <!-- Phone -->
+        <label for="phone-type">Phone Type:</label>
+        <select id="phone-type" name="phone-type" required>
+          <option value="">Select one</option>
+          <option value="mobile">Mobile</option>
+          <option value="home">Home</option>
+          <option value="work">Work</option>
+        </select>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+
+        <!-- Credic Card info -->
+        <label for="amount">Donation Amount ($):</label>
+        <input type="number" id="amount" name="amount" min="1" required>
+
+        <label for="cc-number">Credit Card #:</label>
+        <input type="text" id="cc-number" name="cc-number" pattern="[0-9]{16}" maxlength="16" placeholder="16-digit number" required>
+
+        <label for="security-code">Security Code (CVV):</label>
+        <input type="text" id="security-code" name="security-code" pattern="[0-9]{3,4}" maxlength="4" placeholder="3-4 digits" required>
+
+        <!-- Terms -->
+        <label>
+          <input type="checkbox" id="terms" name="terms" required>
+          I agree to the <a href="#" target="_blank">terms and conditions</a>.
+        </label>
+
+        <button type="submit">Submit Donation</button>
+      </form>
+    </main>
+
+    <aside class="sidebar">
+      <img src="Images/Whitehouse_pic.JPG" alt="A photo of Seth smiling">
+      <h3>Contact Me</h3>
+      <p>Email: <a href="mailto:Seth.brown1@mga.edu">Seth.brown1@mga.edu</a></p>
+      <p><a href="https://www.linkedin.com/in/seth-brown-7b4968260/">LinkedIn</a></p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Seth Brown. All rights reserved.</p>
+  </footer>
+<script src="script.js" defer></script>
+</body>
+</html>
